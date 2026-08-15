@@ -108,7 +108,7 @@ pip install pandas numpy pyhepmc fastjet xgboost scikit-learn matplotlib psutil 
 - **XGBoost:** o classificador atingiu **AUC ≈ 0,944** nos dados de treino, com as variáveis relacionadas ao vértice secundário dos jatos (massa e número de trilhas do SV) entre as mais importantes para a separação sinal/fundo.
 - **Significância:** cortes mais rígidos na pontuação do classificador (score > 0,6–0,9) elevam substancialmente a significância estatística (`S/√B`), evidenciando o potencial do aprendizado de máquina para a observação do canal `HH → b b̄ μ⁺μ⁻` no FCC-hh.
 
-Os detalhes completos, figuras e discussão dos resultados estão na monografia ([`Monografia_Levi.pdf`](./Monografia_Levi.pdf), Capítulo 7).
+Os detalhes completos, figuras e discussão dos resultados estão na monografia, Capítulo 7).
 
 ---
 

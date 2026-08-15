@@ -1,0 +1,87 @@
+import model loop_sm-lepton_masses
+generate p p > h h QED<=2[noborn=QCD]
+output pp_hh
+launch
+madspin=none
+shower=Pythia8
+decay h > b b~
+decay h > mu+ mu- --add
+--------------------------------------
+import model loop_sm-lepton_masses
+generate p p > z z QED<=2[noborn=QCD]
+output pp_zz
+launch
+madspin=none
+shower=Pythia8
+decay z > b b~
+decay z > mu+ mu- --add
+--------------------------------------
+import model loop_sm-lepton_masses
+generate p p > j j mu+ mu-
+output pp_jjmumu
+launch
+
+madspin=none
+shower=Pythia8
+--------------------------------------
+import model loop_sm-lepton_masses
+generate p p > t t~
+output pp_tt
+launch
+
+madspin=none
+shower=Pythia8
+--------------------------------------
+import model loop_sm-lepton_masses
+generate p p > j j
+output pp_jj
+launch
+
+madspin=none
+shower=Pythia8
+
+----------------------------------------
+
+import model loop_sm-lepton_masses
+generate p p > z j j
+output pp_zjj_2mu
+launch
+
+madspin=none
+shower=Pythia8
+
+decay z > mu+ mu-
+
+----------------------------------------
+
+import model loop_sm-lepton_masses
+generate p p > z j j
+output pp_zjj_2b
+launch
+
+madspin=none
+shower=Pythia8
+
+decay z > b b~
+
+----------------------------------------
+
+import model loop_sm-lepton_masses
+generate p p > h j j
+output pp_hjj_2mu
+launch
+
+madspin=none
+shower=Pythia8
+
+decay h > mu+ mu-
+
+---------------------------------------
+
+1000000 Eventos cada
+
+todas tem alteração no card para 100TeV:
+
+ 50000.0     = ebeam1  ! beam 1 total energy in GeV
+ 50000.0     = ebeam2  ! beam 2 total energy in GeV
+

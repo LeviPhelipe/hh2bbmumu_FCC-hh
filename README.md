@@ -40,7 +40,6 @@ O trabalho completo (dissertação em PDF) está disponível em [`Biblioteca Vir
 
 | Arquivo | Descrição |
 |---|---|
-| [`Monografia_Levi.pdf`](./Monografia_Levi.pdf) | Monografia completa (TCC), com toda a fundamentação teórica, metodologia, resultados e referências. |
 | [`Geração_madgraph`](./Geração_madgraph) | Comandos/cards do `MadGraph5_aMC@NLO` usados para gerar cada canal de sinal e de fundo (processo, decaimentos, energia de feixe de 50 TeV). |
 | [`cutflow.ipynb`](./cutflow.ipynb) | Leitura dos arquivos `.hepmc`, reconstrução de jatos/múons, aplicação dos cortes sequenciais (cutflow) e geração dos histogramas de massa invariante. |
 | [`Cortes.ipynb`](./Cortes.ipynb) | Pipeline completo de seleção de eventos: leitura dos `.hepmc` em chunks, reconstrução de jatos (anti-k_t), b-tagging por vértice secundário, construção das variáveis físicas, exportação para CSV e normalização dos pesos por luminosidade. |

@@ -21,7 +21,7 @@ no **Futuro Colisor Circular hádron-hádron (FCC-hh)** do CERN, com energia de 
 
 A produção de pares de bósons de Higgs (di-Higgs) é uma das principais formas de acessar experimentalmente o **autoacoplamento trilinear do Higgs (λ_HHH)**, um parâmetro fundamental para entender a forma do potencial de Higgs e testar a validade do Modelo Padrão. Como esse processo tem seção de choque extremamente pequena e sofre com fundos abundantes, o trabalho explora tanto **cortes cinemáticos (cutflow)** quanto **aprendizado de máquina (XGBoost)** para maximizar a separação entre sinal e fundo.
 
-O trabalho completo (dissertação em PDF) está disponível em [`Monografia_Levi.pdf`](./Monografia_Levi.pdf).
+O trabalho completo (dissertação em PDF) está disponível em [`Monografia_Levi.pdf`](https://catalogo-redesirius.uerj.br/Terminalweb).
 
 ---
 

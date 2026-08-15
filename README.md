@@ -9,7 +9,7 @@ Trabalho de Conclusão de Curso (Graduação em Física) apresentado ao **Maraca
 
 ---
 
-## 📖 Sobre o projeto
+##  Sobre o projeto
 
 Este repositório reúne o código, as simulações e a monografia referentes ao estudo do canal de decaimento
 
@@ -25,7 +25,7 @@ O trabalho completo (dissertação em PDF) está disponível em [`Biblioteca Vir
 
 ---
 
-## 🔬 Metodologia resumida
+##  Metodologia resumida
 
 1. **Geração de eventos** — Amostras de Monte Carlo geradas com `MadGraph5_aMC@NLO` (nível partônico), decaimentos tratados via `MadSpin`/decaimento direto no MadGraph, e chuveiro de pártons + hadronização com `Pythia8`. Todas as amostras foram geradas a **√s = 100 TeV** (feixes de 50 TeV cada), com **1.000.000 de eventos** por canal.
 2. **Seleção de objetos** — Reconstrução de jatos com o algoritmo **anti-k_t** (R = 0,4, via `fastjet`), seleção de múons (PID = ±13) e um procedimento de **b-tagging por vértice secundário** (baseado no deslocamento transversal `Lxy`, número de trilhas e massa invariante do vértice reconstruído a partir das informações de verdade do MC).
@@ -36,7 +36,7 @@ O trabalho completo (dissertação em PDF) está disponível em [`Biblioteca Vir
 
 ---
 
-## 📁 Estrutura do repositório
+##  Estrutura do repositório
 
 | Arquivo | Descrição |
 |---|---|
@@ -49,7 +49,7 @@ O trabalho completo (dissertação em PDF) está disponível em [`Biblioteca Vir
 
 ---
 
-## ⚛️ Canais simulados
+##  Canais simulados
 
 | Canal | Decaimento | Papel | σ (pb) |
 |---|---|---|---|
@@ -64,7 +64,7 @@ O trabalho completo (dissertação em PDF) está disponível em [`Biblioteca Vir
 
 ---
 
-## 🛠️ Ferramentas e dependências
+##  Ferramentas e dependências
 
 - **Geração de eventos:** [MadGraph5_aMC@NLO](https://launchpad.net/mg5amcnlo) (+ MadSpin), [Pythia8](https://pythia.org/)
 - **Leitura de eventos:** [`pyhepmc`](https://github.com/scikit-hep/pyhepmc) (formato HepMC)
@@ -84,7 +84,7 @@ pip install pandas numpy pyhepmc fastjet xgboost scikit-learn matplotlib psutil 
 
 ---
 
-## ▶️ Como reproduzir a análise
+##  Como reproduzir a análise
 
 1. **Gerar as amostras de Monte Carlo** seguindo os comandos descritos em [`Geração_madgraph`](./Geração_madgraph) (um processo por bloco, 1.000.000 de eventos cada, com `ebeam1 = ebeam2 = 50000 GeV`).
 2. **Rodar `Cortes.ipynb`** (ou o script equivalente descrito na monografia, Apêndice A) para:
@@ -102,7 +102,7 @@ pip install pandas numpy pyhepmc fastjet xgboost scikit-learn matplotlib psutil 
 
 ---
 
-## 📊 Principais resultados
+##  Principais resultados
 
 - **Cutflow:** após todos os cortes cinemáticos (seleção de múons, massa μ⁺μ⁻, ≥2 jatos, massa do dijato e ≥2 jatos-b), o canal de sinal (HH) retém uma fração muito maior de eventos do que os fundos, especialmente em relação a `ZZ`, `JJ` e `ZJJ → b b̄`, que são praticamente eliminados.
 - **XGBoost:** o classificador atingiu **AUC ≈ 0,944** nos dados de treino, com as variáveis relacionadas ao vértice secundário dos jatos (massa e número de trilhas do SV) entre as mais importantes para a separação sinal/fundo.
@@ -112,7 +112,7 @@ Os detalhes completos, figuras e discussão dos resultados estão na monografia,
 
 ---
 
-## ⚠️ Limitações e trabalhos futuros
+##  Limitações e trabalhos futuros
 
 - Este é um estudo **a nível de partículas** (geradores), **sem simulação de detector** (resolução, ruído, eficiências de reconstrução) — os resultados representam um cenário otimista.
 - Algumas variáveis usadas no treinamento (ex.: informações de vértice deslocado baseadas em verdade do MC) não estão disponíveis dessa forma em dados experimentais reais; o próximo passo natural é substituí-las por um algoritmo de b-tagging mais realista.
@@ -120,7 +120,7 @@ Os detalhes completos, figuras e discussão dos resultados estão na monografia,
 
 ---
 
-## 📚 Referência
+##  Referência
 
 Se este trabalho for útil para você, pode citá-lo como:
 
@@ -130,10 +130,10 @@ A lista completa de referências bibliográficas (MadGraph5, Pythia8, anti-k_t, 
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Adicione aqui a licença de sua escolha (ex.: MIT, GPL-3.0) caso deseje tornar o repositório reutilizável por terceiros.
 
-## 🙋 Contato
+##  Contato
 
 Dúvidas, sugestões ou colaborações são bem-vindas — abra uma *issue* neste repositório.

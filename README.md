@@ -130,10 +130,6 @@ A lista completa de referências bibliográficas (MadGraph5, Pythia8, anti-k_t, 
 
 ---
 
-##  Licença
-
-Adicione aqui a licença de sua escolha (ex.: MIT, GPL-3.0) caso deseje tornar o repositório reutilizável por terceiros.
-
 ##  Contato
 
 Dúvidas, sugestões ou colaborações são bem-vindas — abra uma *issue* neste repositório.
